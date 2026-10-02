@@ -24,7 +24,7 @@ public class WmChannelController {
 
     @PutMapping("/update/{id}")
     public ResponseResult update(@PathVariable("id")Integer id, @RequestBody WmChannelDto dto){
-
+         System.out.println("update"+id);
         return wmChannelService.update(id,dto);
     }
 
