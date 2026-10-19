@@ -44,6 +44,7 @@ public class WmChannelController {
 
     @GetMapping("/list")
     public ResponseResult list(){
+        System.out.println("你好");
         return wmChannelService.list();
     }
 }
